@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ED-Easily Done</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>
+  <!-- navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="/Images/logo.png" height="60px"><b>Easily Done</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-xxl-1 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <b>Courses</b>
+              </a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="English.html"><div class="col-auto"><img src="/Images/English.jpg" width="50%">English</div></a>
+                </li>
+                <li><a class="dropdown-item" href="Mathematics.html"><div class="col-auto"><img src="/Images/math.jpg" width="20%">Mathematics</div></a>
+                </li>
+                <li><a class="dropdown-item" href="Science.html"><div class="col-auto"><img src="/Images/Science.jpg" width="20%">Science</div></a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <a class="btn btn-outline-dark" href="#" role="button" data-bs-toggle="modal"
+          data-bs-target="#exampleModalToggle">Sign In</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <img src="/Images/banner.png" width="100%">
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">General Information</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-floating mb-3 ">
+            <input type="email" class="form-control" id="floatingInput" placeholder="First">
+            <label for="floatingInput">First Name</label>
+            <br>
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Name">
+            <label for="floatingPassword">Last Name</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second
+            modal</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Hide this modal and show the first with the button below.
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to
+            first</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!-- Quote -->
+  <div class="row-cols-sm-1">
+    <div class="card text-bg-dark">
+      <img src="Images/Black.jpeg" class="card-img" alt="...">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">You don't understand anything until you learn it more than one way.</p>
+        <p class="card-text"><small>Marvin Minsky</small></p>
+      </div>
+    </div>
+</div>
+</body>
+
+</html>
